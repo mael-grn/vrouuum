@@ -1,0 +1,60 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node / Dépendances
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environnement / Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.*.local
+
+# Builds & Outputs
+build
+out
+.next
+.nuxt
+.vite
+.output
+.turbo
+.parcel-cache
+
+# Cache de tests / Couverture
+coverage
+.nyc_output
+
+# Fichiers système & OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs & Éditeurs
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

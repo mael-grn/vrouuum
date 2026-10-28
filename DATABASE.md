@@ -100,6 +100,7 @@ Pilote individuel.
 * `name` : Prénom
 * `surname` : Nom de famille
 * `country` : Nationalité / pays de licence
+* `photo` : URL de la photo officielle du pilote
 
 ---
 

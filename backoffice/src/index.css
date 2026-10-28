@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #e4e4e7;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #09090b;
+  }
+}
+
+/* Material 3 Expressive & Flat Racing Red Utility Classes */
+@layer components {
+  /* Flat solid card with expressive borders */
+  .flat-card {
+    @apply bg-white border border-zinc-200/90 rounded-expressive-lg shadow-sm transition-all duration-200;
+  }
+
+  .flat-card-interactive {
+    @apply flat-card hover:bg-zinc-50/80 hover:border-racing-500/40 hover:shadow-md cursor-pointer;
+  }
+
+  /* Expressive deformed pill and shapes */
+  .racing-shape-asymmetric {
+    border-radius: 28px 12px 28px 12px;
+  }
+
+  .racing-shape-flag {
+    clip-path: polygon(0% 0%, 100% 0%, 94% 50%, 100% 100%, 0% 100%);
+  }
+
+  .racing-slant {
+    transform: skewX(-6deg);
+  }
+
+  .racing-slant-content {
+    transform: skewX(6deg);
+  }
+
+  .flat-input {
+    @apply bg-zinc-50 border border-zinc-200 rounded-2xl px-4 py-2.5 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:border-racing-500 focus:bg-white focus:ring-2 focus:ring-racing-500/20 transition-all;
+  }
+}
+
+/* Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e10600;
+}

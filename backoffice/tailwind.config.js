@@ -1,0 +1,68 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        display: ['Unbounded', 'Plus Jakarta Sans', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
+      borderRadius: {
+        '2.5xl': '1.25rem',
+        '3xl': '1.5rem',
+        '3.5xl': '1.75rem',
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+        'expressive-sm': '14px',
+        'expressive-md': '20px',
+        'expressive-lg': '28px',
+        'expressive-xl': '36px',
+      },
+      colors: {
+        background: '#0b0405',
+        racing: {
+          50: '#fff0f0',
+          100: '#ffdcdc',
+          200: '#ffbfbf',
+          300: '#ff8a8a',
+          400: '#ff4d4d',
+          500: '#e10600', // Iconic Racing Red
+          600: '#cc0500',
+          700: '#a30400',
+          800: '#7a0300',
+          900: '#4d0200',
+          950: '#2b0100',
+          scarlet: '#ff1f24',
+          cherry: '#ff3b56',
+          ruby: '#c40600',
+          crimson: '#8a0300',
+          wine: '#48060a',
+          gold: '#ffd000',
+          yellow: '#ffea00',
+          trackgreen: '#00e676',
+        },
+        surface: {
+          base: '#0b0405',
+          card: '#16080a',
+          cardHover: '#1f0c0f',
+          elevated: '#240d11',
+          tonal: '#351218',
+          border: 'rgba(255, 60, 60, 0.16)',
+          borderHover: 'rgba(255, 60, 60, 0.35)',
+          borderActive: '#e10600',
+          subtle: 'rgba(255, 255, 255, 0.05)',
+        },
+      },
+      boxShadow: {
+        'flat-racing': '0 4px 0 0 #8a0300',
+        'flat-racing-lg': '0 8px 0 0 #700200',
+        'flat-card': '0 8px 24px -4px rgba(0, 0, 0, 0.6), 0 2px 8px -2px rgba(225, 6, 0, 0.1)',
+        'glow-racing': '0 0 35px -5px rgba(225, 6, 0, 0.45)',
+        'glow-racing-lg': '0 0 60px -10px rgba(225, 6, 0, 0.6)',
+      },
+    },
+  },
+  plugins: [],
+};
